@@ -7,6 +7,11 @@
 }
 ul{
   padding-left: 0;
+  
+}
+.card-list{
+  display: flex;
+  flex-direction: column;
 }
 
 .gaane {
@@ -20,18 +25,22 @@ button {
   margin-right: 1rem;
   width: 8rem;
   background-color: cadetblue;
+  border-radius: 10px;
+  /* font-size: medium; */
+  font-weight: bold;
 }
 
 .card {
   list-style: none;
   padding: 1rem;
   border: 2px solid #475569;
-  width: 70%;
+  box-shadow: 5px 10px 10px 10px;
+  width: 60%;
   /* margin-bottom: 1rem; */
   border-radius: 0.5rem;
   margin: auto;
-  background-color: #d4d4d4;
-
+  background-color: #4a6382;
+  margin-bottom: 1rem;
   /* width: 50vw; */
   /*
   margin: auto;
@@ -39,3 +48,38 @@ button {
   
   border: 1px solid black; */
 }
+
+.footer{
+  /* position: fixed; */
+  width: 94vw;
+  height: 4rem;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid ;
+  box-shadow: 5px 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #666699;
+  
+}
+
+.footerText{
+  color: black;
+  font-weight: bold;
+  
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+}
+
+img{
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.5rem;
+  
+}
+
+

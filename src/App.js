@@ -78,45 +78,57 @@ export default function App() {
 
   // console.log(songsList[0].Romantic[0].song);
   return (
-    <div className="App">
-      <div className="gaane">
-        <span
-          style={{
-            marginTop: "1rem",
-            fontSize: "xx-large",
-            paddingRight: "0.5rem"
-          }}
-        >
-          🎼
-        </span>
-        <h1>AccheGaane</h1>
-      </div>
-      {/* <div> */}
-      <p>Checkout my favorite songs. Select a genre to get started.</p>
-      {/* <div> */}
-      {songsList.map((t, index) => {
-        // console.log(t)
-        return (
-          <button onClick={() => displaySongs(t)}>{Object.keys(t)}</button>
-        );
-      })}
+    <>
+      <div className="App">
+        <div className="gaane">
+          <span
+            style={{
+              marginTop: "1rem",
+              fontSize: "xx-large",
+              paddingRight: "0.5rem"
+            }}
+          >
+            🎼
+          </span>
+          <h1>AccheGaane</h1>
+        </div>
+        
+        <p>Checkout my favorite songs. Select a genre to get started.</p>
+        
+        {songsList.map((t, index) => {
+          // console.log(t)
+          return (
+            <button onClick={() => displaySongs(t)}>{Object.keys(t)}</button>
+          );
+        })}
 
-      <hr style={{ marginTop: "2rem", width: "80vw" }} />
-      <ul>
-      {songs.map((t) => {
-        return (
-          <>
-          <li className="card">
-            <h4>{t.song}</h4>
-            <p>from {t.movie}</p>
-            <p>released on {t.year}</p>
-          </li>
-          <br/>
-          </>
-        );
-      })}
-      </ul>
-    </div>
+        <hr style={{ marginTop: "2rem", width: "80vw" }} />
+        <ul className='card-list'>
+          {songs.map((t) => {
+            return (
+              <>
+              <li className="card">
+                <h4>{t.song}</h4>
+                <p>from {t.movie}</p>
+                <p>released on {t.year}</p>
+              </li>
+              <br/>
+              </>
+            );
+          })}
+        </ul>
+
+      </div>
+
+      <footer className='footer'>
+          <p className="footerText">© | 2022 | Kumari Smitha</p>
+          <ul>
+            <li><a href="https://github.com/Kumari-Smitha"><img src="github.png" alt="github"/></a></li>
+            <li><a href="https://github.com/Kumari-Smitha"><img src="linkedin.png" alt="linkedin"/></a></li>
+            <li><a href="https://github.com/Kumari-Smitha"><img src="twitter.png" alt="twitter"/></a></li>
+          </ul>
+      </footer>
+    </>
   );
 }
 
