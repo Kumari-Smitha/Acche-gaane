@@ -19,6 +19,16 @@ export default function App() {
           song: "Galiyan",
           year: "2013",
           movie: "Galiyan"
+        },
+        {
+          song: "Mere rang me",
+          year: "1993",
+          movie: "Maine pyar kiya"
+        },
+        {
+          song: "Neele neele ambar par",
+          year: "189",
+          movie: "Kalaakar"
         }
       ]
     },
@@ -33,6 +43,16 @@ export default function App() {
           song: "Bhage re man kahi",
           year: "2008",
           movie: "Chameli"
+        },
+        {
+          song: "Zara Zara",
+          year: "1999",
+          movie: "RHTDM"
+        },
+        {
+          song: "Kabhi jo badal barse",
+          year: "2015",
+          movie: "Jackpot"
         }
       ]
     },
@@ -47,6 +67,16 @@ export default function App() {
           song: "Ae mere Humsafar",
           year: "2002",
           movie: "Baazigar"
+        },
+        {
+          song: "Saibo",
+          year: "2003",
+          movie: "Shor in the city"
+        },
+        {
+          song: "Patakha Guddi",
+          year: "2013",
+          movie: "Highway"
         }
       ]
     },
@@ -61,6 +91,16 @@ export default function App() {
           song: "Param sundari",
           year: "2022",
           movie: "Mimi"
+        },
+        {
+          song: "Saturday Saturday",
+          year: "2016",
+          movie: "HSKD"
+        },
+        {
+          song: "The Disco song",
+          year: "2013",
+          movie: "SOTY"
         }
       ]
     }
@@ -117,7 +157,8 @@ export default function App() {
             );
           })}
         </ul>
-
+          <br></br>
+          <br></br>
       </div>
 
       <footer className='footer'>

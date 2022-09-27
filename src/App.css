@@ -1,9 +1,13 @@
+body{
+  background-color: #cbd5e1;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
-  background-color: #cbd5e1;
-  height: 100vh ;
-  
+ 
+  height: calc(100vh-10vh);
+  /* position: relative; */
 }
 ul{
   padding-left: 0;
@@ -50,9 +54,9 @@ button {
 }
 
 .footer{
-  /* position: fixed; */
+  position: fixed;
   width: 94vw;
-  height: 4rem;
+  height: 10vh;
   bottom: 0;
   display: flex;
   justify-content: space-between;
